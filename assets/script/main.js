@@ -20,6 +20,9 @@ function hovered (e) {
   feedforward.classList.add('background')
   buttondrie.classList.add('background')
   interaction.classList.add('background')
+  userflow.classList.add('background')
+  eventbutton.classList.add('background')
+  design.classList.add('background')
 }
 
 function hoveredOut(e) {
@@ -28,6 +31,9 @@ function hoveredOut(e) {
   feedforward.classList.remove('background')
   buttondrie.classList.remove('background')
   interaction.classList.remove('background')
+  userflow.classList.remove('background')
+  eventbutton.classList.remove('background')
+  design.classList.remove('background')
 }
 
 // Button feedforward
@@ -39,15 +45,17 @@ feedforward.addEventListener("click", mouseClicked, false);
 
 function mousePressed(e) {
   console.log("Mouse is down!");
+  feedforward.classList.add('background')
 }
 
 function mouseReleased(e) {
   console.log("Mouse is up!");
+
 }
 
 function mouseClicked(e) {
   console.log("Mouse is clicked!");
-  feedforward.classList.add('buttonrotate')
+  feedforward.classList.toggle('buttonrotate')
 }
 
 // Button feedforward
@@ -62,12 +70,28 @@ let userflow = document.querySelector('a:nth-of-type(13)')
 
 document.addEventListener('keydown', scale)
 
-  function scale(e){
-    if(e.key == "q") {
-    userflow.classList.add('userflow-button')
-  }}
+function scale(e){
+if(e.key == "q") {
+userflow.classList.add('userflow-button')
+}}
 
+  // Button events
+let eventbutton = document.querySelector('a:nth-of-type(11)')
 
+eventbutton.addEventListener('click', skewtoggle)
 
+function skewtoggle () {
+  eventbutton.classList.add('skew-button')
+}
 
+// Button design
+
+let design = document.querySelector('a:nth-of-type(2)')
+
+document.addEventListener('keydown', matrix)
+
+function matrix(e){
+if(e.key == "z") {
+design.classList.add('matrix-button')
+}}
 

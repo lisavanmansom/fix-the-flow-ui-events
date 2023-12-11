@@ -48,10 +48,7 @@ a:nth-of-type(12) {
 }
 
 .jump {
-  animation-name: jump;
-  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
+  animation: jump .3s infinite linear;
 }
 
 @keyframes jump {
@@ -148,4 +145,46 @@ a:nth-of-type(16) {
     80% {transform: scale(3.0)}
     90% {transform: scale(4.0)}
     100% {transform: scale(1.0)}
+  }
+
+  a:nth-of-type(11) {
+    position: relative;
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  .skew-button {
+    animation: skew .3s infinite linear;
+    }
+
+  @keyframes skew {
+    20% {transform: skew(30deg, 20deg)}
+    40% {transform: skew(90deg, 120deg);}
+    60% {transform: skew(20deg, 70deg);}
+    80% {transform: skew(170, 58deg);}
+    100% {transform: skew(30deg, 20deg);}
+  }
+
+  a:nth-of-type(2) {
+    position: relative;
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  .matrix-button {
+    animation: matrix .3s infinite linear;
+    }
+
+  @keyframes matrix {
+    45% {transform:matrix(0.90,1.81,-2.52,-1.28,-50,-41);}
+    90% {transform:matrix(-2.52,-1.28,-0.54,0.91,35,-14);}
+  }
+
+/*  4 |frontend-button| */ 
+  a:nth-of-type(1) {
+    position: relative;
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
   }
