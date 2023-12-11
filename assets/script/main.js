@@ -23,6 +23,7 @@ function hovered (e) {
   userflow.classList.add('background')
   eventbutton.classList.add('background')
   design.classList.add('background')
+  frontend.classList.add('background')
 }
 
 function hoveredOut(e) {
@@ -34,6 +35,7 @@ function hoveredOut(e) {
   userflow.classList.remove('background')
   eventbutton.classList.remove('background')
   design.classList.remove('background')
+  frontend.classList.remove('background')
 }
 
 // Button feedforward
@@ -95,3 +97,10 @@ if(e.key == "z") {
 design.classList.add('matrix-button')
 }}
 
+// Button frontend
+
+let frontend = document.querySelector('a:nth-of-type(1)')
+
+frontend.addEventListener('mouseup', function (){
+  frontend.classList.add('frontend-button')
+})
