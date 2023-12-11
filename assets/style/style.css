@@ -114,3 +114,13 @@ a:nth-of-type(16) {
     50% {transform: rotate(360deg);}
   }
 
+  /* Animation 3 |&-button| */
+  a:nth-of-type(3) {
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  .hide {
+    display: none;
+  }

@@ -45,3 +45,11 @@ function mouseClicked(e) {
   feedforward.classList.add('buttonrotate')
 }
 
+// Button feedforward
+let buttondrie = document.querySelector('a:nth-of-type(3)')
+
+buttondrie.addEventListener('dblclick', function (){
+  buttondrie.classList.add('hide')
+})
+
+
