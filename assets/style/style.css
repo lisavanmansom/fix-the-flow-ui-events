@@ -206,3 +206,19 @@ a:nth-of-type(14) {
   color: var(--secondary);
   border-color: var(--secondary);
 }
+
+a:nth-of-type(10) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.interface-button {
+  animation: frontend 20s ease-in;
+  animation-iteration-count: 1;
+ }
+
+@keyframes frontend {
+  50% {transform: translateY( 1200em);}
+}

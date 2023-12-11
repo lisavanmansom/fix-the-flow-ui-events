@@ -107,6 +107,8 @@ frontend.addEventListener('mouseup', function (){
   frontend.classList.add('frontend-button')
 })
 
+// Button wireflow
+
 let wireflow = document.querySelector('a:nth-of-type(14)')
 
 wireflow.addEventListener("mousedown", mousePressed, false);
@@ -123,4 +125,21 @@ function mouseReleased(e) {
   wireflow.classList.remove('background')
 }
 
+// Button interface
 
+let interface = document.querySelector('a:nth-of-type(10)')
+
+interface.addEventListener('click', interfacetoggle)
+
+function interfacetoggle () {
+  interface.classList.add('interface-button')
+  feedforward.classList.add('interface-button')
+  buttondrie.classList.add('interface-button')
+  interaction.classList.add('interface-button')
+  userflow.classList.add('interface-button')
+  eventbutton.classList.add('interface-button')
+  design.classList.add('interface-button')
+  frontend.classList.add('interface-button')
+  wireflow.classList.add('interface-button')
+  feedback.classList.add('interface-button')
+}
