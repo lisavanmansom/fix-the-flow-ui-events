@@ -79,3 +79,38 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+/* Animation 1 |feedback-button| */
+a:nth-of-type(15) {
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+.background {
+animation: background .3s infinite linear;
+}
+
+@keyframes background {
+  0%   { background: rgb(255, 0, 0) }
+  20%  { background: #00ff04 }
+  40%  { background: #9d00ff }
+  60%  { background: rgb(252, 151, 0) }
+  80%  { background: #00c8ff }
+  100% { background: #ff00d4 }
+}
+
+/* Animation 2 |feedforward-button| */
+a:nth-of-type(16) {
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.buttonrotate {
+  animation: buttonrotate .3s infinite linear;
+  }
+
+  @keyframes buttonrotate {
+    50% {transform: rotate(360deg);}
+  }
+
