@@ -24,6 +24,7 @@ function hovered (e) {
   eventbutton.classList.add('background')
   design.classList.add('background')
   frontend.classList.add('background')
+  wireflow.classList.add('background')
 }
 
 function hoveredOut(e) {
@@ -36,6 +37,7 @@ function hoveredOut(e) {
   eventbutton.classList.remove('background')
   design.classList.remove('background')
   frontend.classList.remove('background')
+  wireflow.classList.remove('background')
 }
 
 // Button feedforward
@@ -104,3 +106,21 @@ let frontend = document.querySelector('a:nth-of-type(1)')
 frontend.addEventListener('mouseup', function (){
   frontend.classList.add('frontend-button')
 })
+
+let wireflow = document.querySelector('a:nth-of-type(14)')
+
+wireflow.addEventListener("mousedown", mousePressed, false);
+wireflow.addEventListener("mouseup", mouseReleased, false);
+wireflow.addEventListener("click", mouseClicked, false);
+
+function mousePressed(e) {
+  console.log("Mouse is down!");
+  wireflow.classList.add('background')
+}
+
+function mouseReleased(e) {
+  console.log("Mouse is up!");
+  wireflow.classList.remove('background')
+}
+
+

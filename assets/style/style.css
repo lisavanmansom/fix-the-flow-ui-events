@@ -181,7 +181,7 @@ a:nth-of-type(16) {
     90% {transform:matrix(-2.52,-1.28,-0.54,0.91,35,-14);}
   }
 
-/*  4 |frontend-button| */ 
+/*  animatie 7 |frontend-button| */ 
   a:nth-of-type(1) {
     position: relative;
     background: var(--highlight-secondary);
@@ -197,4 +197,12 @@ a:nth-of-type(16) {
   10% {transform:matrix(-2.52,-1.28,-0.54,0.91,35,-14);}
   25% {transform:translateX(50em) translateY( 25em);}
   80% {transform:matrix(-2.52,-1.28,-0.54,0.91,35,-14);}
+}
+
+/*  Animatie 8 |Wireflow-button| */ 
+a:nth-of-type(14) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
 }
