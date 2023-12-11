@@ -17,12 +17,17 @@ feedback.addEventListener("mouseout", hoveredOut, false);
 function hovered (e) {
   console.log("Hovered!");
   body.classList.add('background')
-
+  feedforward.classList.add('background')
+  buttondrie.classList.add('background')
+  interaction.classList.add('background')
 }
 
 function hoveredOut(e) {
   console.log("Hovered Away!");
   body.classList.remove('background')
+  feedforward.classList.remove('background')
+  buttondrie.classList.remove('background')
+  interaction.classList.remove('background')
 }
 
 // Button feedforward
@@ -51,5 +56,18 @@ let buttondrie = document.querySelector('a:nth-of-type(3)')
 buttondrie.addEventListener('dblclick', function (){
   buttondrie.classList.add('hide')
 })
+
+// Button userflow
+let userflow = document.querySelector('a:nth-of-type(13)')
+
+document.addEventListener('keydown', scale)
+
+  function scale(e){
+    if(e.key == "q") {
+    userflow.classList.add('userflow-button')
+  }}
+
+
+
 
 
