@@ -173,6 +173,7 @@ function interfacetoggle () {
   frontend.classList.add('interface-button')
   wireflow.classList.add('interface-button')
   feedback.classList.add('interface-button')
+  user.classList.add('interface-button')
 }
 
 // Button user
