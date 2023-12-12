@@ -147,6 +147,7 @@ a:nth-of-type(16) {
     100% {transform: scale(1.0)}
   }
 
+  /* Animation 5 |Events-button| */
   a:nth-of-type(11) {
     position: relative;
     background: var(--highlight-secondary);
@@ -165,7 +166,7 @@ a:nth-of-type(16) {
     80% {transform: skew(170, 58deg);}
     100% {transform: skew(30deg, 20deg);}
   }
-
+  /* Animation 6 |design-button| */
   a:nth-of-type(2) {
     position: relative;
     background: var(--highlight-secondary);
@@ -206,7 +207,7 @@ a:nth-of-type(14) {
   color: var(--secondary);
   border-color: var(--secondary);
 }
-
+/*  Animatie 9 |Interface-button| */ 
 a:nth-of-type(10) {
   position: relative;
   background: var(--highlight-secondary);
@@ -215,10 +216,46 @@ a:nth-of-type(10) {
 }
 
 .interface-button {
-  animation: frontend 20s ease-in;
+  animation: interface 20s ease-in;
   animation-iteration-count: 1;
  }
 
-@keyframes frontend {
+@keyframes interface {
   50% {transform: translateY( 1200em);}
+}
+
+/*  Animatie 10 |Interface-button| */ 
+a:nth-of-type(9) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.user-button {
+  animation: user .3s infinite linear;
+}
+
+@keyframes user {
+  0% {
+    transform: scale(1, 1) translateY(10rem);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-5rem);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(-15rem);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }

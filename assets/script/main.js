@@ -10,6 +10,15 @@ function jumpHandler() {
 // Button feedback
 let feedback = document.querySelector('a:nth-of-type(15)')
 let body = document.querySelector('body')
+let flow = document.querySelector('a:nth-of-type(8)')
+let the = document.querySelector('a:nth-of-type(7)')
+let fix = document.querySelector('a:nth-of-type(6)')
+let sprint5 = document.querySelector('a:nth-of-type(5)')
+let development = document.querySelector('a:nth-of-type(4)')
+let labels = document.querySelector('a:nth-of-type(17)')
+let states = document.querySelector('a:nth-of-type(18)')
+let nav = document.querySelector('a:nth-of-type(19)')
+let code = document.querySelector('a:nth-of-type(20)')
 
 feedback.addEventListener("mouseover", hovered, false);
 feedback.addEventListener("mouseout", hoveredOut, false);
@@ -25,6 +34,17 @@ function hovered (e) {
   design.classList.add('background')
   frontend.classList.add('background')
   wireflow.classList.add('background')
+  interface.classList.add('background')
+  user.classList.add('background')
+  fix.classList.add('background')
+  the.classList.add('background')
+  flow.classList.add('background')
+  sprint5.classList.add('background')
+  development.classList.add('background')
+  labels.classList.add('background')
+  nav.classList.add('background')
+  code.classList.add('background')
+  states.classList.add('background')
 }
 
 function hoveredOut(e) {
@@ -38,6 +58,17 @@ function hoveredOut(e) {
   design.classList.remove('background')
   frontend.classList.remove('background')
   wireflow.classList.remove('background')
+  interface.classList.remove('background')
+  user.classList.remove('background')
+  fix.classList.remove('background')
+  the.classList.remove('background')
+  flow.classList.remove('background')
+  sprint5.classList.remove('background')
+  development.classList.remove('background')
+    labels.classList.remove('background')
+  nav.classList.remove('background')
+  code.classList.remove('background')
+  states.classList.remove('background')
 }
 
 // Button feedforward
@@ -143,3 +174,13 @@ function interfacetoggle () {
   wireflow.classList.add('interface-button')
   feedback.classList.add('interface-button')
 }
+
+// Button user
+let user = document.querySelector('a:nth-of-type(9)')
+
+document.addEventListener('keydown', translate)
+
+function translate(e){
+if(e.key == "x") {
+user.classList.add('user-button')
+}}
