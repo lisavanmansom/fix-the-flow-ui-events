@@ -93,7 +93,7 @@ function mouseClicked(e) {
   feedforward.classList.toggle('buttonrotate')
 }
 
-// Button feedforward
+// Button &
 let buttondrie = document.querySelector('a:nth-of-type(3)')
 
 buttondrie.addEventListener('dblclick', function (){
